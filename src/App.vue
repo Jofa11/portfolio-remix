@@ -1,6 +1,5 @@
 <template>
-<div class="background">
-
+<div>
 </div>
 </template>
 
@@ -19,6 +18,11 @@ body {
   margin: 0px;
   padding: 0px;
   overflow-x: hidden;
+  background: url('../src/assets/white-clouds.jpeg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 #app {
@@ -29,11 +33,4 @@ body {
   color: #2c3e50;
 }
 
-.background {
-  background-image: url('../src/assets/white-clouds.jpeg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 55em;
-}
 </style>

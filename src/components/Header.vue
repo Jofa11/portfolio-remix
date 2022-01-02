@@ -82,7 +82,7 @@ li:hover {
 
 @media (min-width: 500px) {
   nav {
-    height: 4.9em;
+    height: 5em;
   }
 
   li {

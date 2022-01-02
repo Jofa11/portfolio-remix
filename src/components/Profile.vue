@@ -18,5 +18,14 @@ export default {
 h1 {
     font-size: 3em;
     color: rgb(44, 4, 44);
+    padding-top: 15%;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+p {
+  padding: 2em
 }
 </style>

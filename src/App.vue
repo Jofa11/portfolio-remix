@@ -2,18 +2,21 @@
   <div>
     <Header />
     <Profile />
+    <ProjectCard />
   </div>
 </template>
 
 <script>
 import Header from './components/Header.vue';
 import Profile from './components/Profile.vue';
+import ProjectCard from './components/ProjectCard.vue';
 
 export default {
   name: 'App',
   components: {
     Header,
-    Profile
+    Profile,
+    ProjectCard
   }
 }
 </script>

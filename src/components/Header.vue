@@ -1,6 +1,8 @@
 <template>
   <nav>
-    <ul>
+    <ul
+      @touchstart="activeButton(e)"
+    >
       <li>
         <a
           href="mailto: favrejoshua@yahoo.com"
@@ -52,13 +54,33 @@
 
 <script>
 export default {
+  methods: {
+    activeButton() {
+      document.querySelector('e.li').style.cssText = 
+      `background-image: linear-gradient(rgba(92, 68, 112, .9), rgba(248, 73, 219, .9));
+      border: 2px solid rgb(66, 22, 77);
+      border-radius: 10%;`
+    },
+    // notActive() {
+    //   document.querySelector('e.li').style.cssText = `
+    //   background-image: none;
+    //   background-color: background-color: rgb(139, 119, 155);
+    //   border: none;
+    //   border-radius: 0;
+    //   `
+    // }
+  }
 }
 </script>
 
 
 <style scoped>
 nav {
-  background-color: rgba(92, 68, 112, 0.7);
+  background-color: rgb(139, 119, 155);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 4.4em;
 }
 
 ul {
@@ -69,15 +91,14 @@ ul {
 li {
   list-style-type: none;
   display: inline;
-  padding: .2em;
-  
+  padding: 3em .2em 0;
+  margin-top: 2em;
 }
 
 li:hover {
   background-image: linear-gradient(rgba(92, 68, 112, .9), rgba(248, 73, 219, .9));
   border: 2px solid rgb(66, 22, 77);
   border-radius: 10%;
-  /* border-radius: 50%;  */
 }
 
 @media (min-width: 500px) {
@@ -87,6 +108,8 @@ li:hover {
 
   li {
     float: right;
+    padding: .5em .5em 0;
+    margin-top: 0;
   }
 }
 </style>

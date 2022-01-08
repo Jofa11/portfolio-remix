@@ -36,4 +36,8 @@ img {
     background-color: rgba(157, 63, 157, 0.5);
     margin-bottom: 2em;
 }
+
+.card:hover {
+    
+}
 </style>

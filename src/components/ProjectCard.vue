@@ -3,11 +3,25 @@
     <div class="card">
       <a
     
+        href="https://unruffled-rosalind-0724d0.netlify.app/"
+        target="_blank"
+      >
+        <h2>Creativity Canvas</h2>
+        <h5>A drawing app built using Vue.js for a hackathon</h5>
+        <img
+          src="../assets/art-app.png"
+          alt="project landing page"
+        >
+      </a>
+    </div>
+    <div class="card">
+      <a
+    
         href="https://send-my-verse.herokuapp.com/"
         target="_blank"
       >
         <h2>My Verse</h2>
-        <h5>Description</h5>
+        <h5>A MERN stack project using vanilla CSS</h5>
         <img
           src="../assets/my-verse-home.png"
           alt="project landing page"
@@ -21,9 +35,51 @@
         target="_blank"
       >
         <h2>Megslist</h2>
-        <h5>Description</h5>
+        <h5>A marketplace app. MERN stack with Redux</h5>
         <img
           src="../assets/megslist.png"
+          alt="project landing page"
+        >
+      </a>
+    </div>
+    <div class="card">
+      <a
+    
+        href="https://gentle-reaches-48748.herokuapp.com/"
+        target="_blank"
+      >
+        <h2>X Trainer</h2>
+        <h5>A full stack project using React and Django</h5>
+        <img
+          src="../assets/x-trainer.png"
+          alt="project landing page"
+        >
+      </a>
+    </div>
+    <div class="card">
+      <a
+    
+        href="https://project-two-guitar-app.herokuapp.com/"
+        target="_blank"
+      >
+        <h2>Guitar Chord App</h2>
+        <h5>A React project that accesses a third party API</h5>
+        <img
+          src="../assets/guitar.png"
+          alt="project landing page"
+        >
+      </a>
+    </div>
+    <div class="card">
+      <a
+    
+        href="https://jofa11.github.io/trivia-project/"
+        target="_blank"
+      >
+        <h2>Star Wars Trivia</h2>
+        <h5>A game built using vanilla Javascript, HTML, and CSS</h5>
+        <img
+          src="../assets/vader.png"
           alt="project landing page"
         >
       </a>
@@ -39,26 +95,49 @@ export default {
 
 <style scoped>
 img {
-    width: 11em;
+    width: 10em;
     height: 6em;
+    border: 2px solid rgb(66, 22, 77);
+    border-radius: 5%;
+}
+
+a {
+    text-decoration: none;
 }
 
 .card-container {
     padding: 2em;
+    
 }
 
 .card {
-    margin: auto;
+    margin: 10%;
     width: 15em;
     height: auto;
     border: 5px solid rgb(66, 22, 77);
     border-radius: 10%;
     background-color: rgba(157, 63, 157, 0.5);
     margin-bottom: 2em;
+    display: inline-block;
+    justify-content: space-between;
+    box-shadow: 4px 4px 5px 2px rgb(83, 39, 124);
 }
 
 .card:hover {
-    border: 7px solid rgb(66, 22, 77);
+    border: 5px solid rgb(129, 45, 150);
     background-image: linear-gradient(rgba(92, 68, 112, .9), rgba(248, 73, 219, .9));
+    
+}
+
+@media (min-width: 1000px) {
+    .card {
+        margin: 5%;
+    }
+}
+
+@media (min-width: 1700px) {
+    .card {
+        margin: 8%;
+    }
 }
 </style>

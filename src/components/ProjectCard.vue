@@ -105,6 +105,16 @@ a {
     text-decoration: none;
 }
 
+h2 {
+    padding: 2% 5%;
+    color: rgb(66, 22, 77);
+}
+
+h5 {
+    padding: 2% 10%;
+    color: rgb(66, 22, 77);
+}
+
 .card-container {
     padding: 2em;
     
@@ -126,7 +136,7 @@ a {
 .card:hover {
     border: 5px solid rgb(129, 45, 150);
     background-image: linear-gradient(rgba(92, 68, 112, .9), rgba(248, 73, 219, .9));
-    
+    box-shadow: 5px 5px 5px 2px rgb(144, 76, 208)
 }
 
 @media (min-width: 1000px) {

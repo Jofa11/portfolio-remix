@@ -1,5 +1,7 @@
 <template>
   <div id="app">
+    <h1>Hello There</h1>
+    <h3>My name is Joshua Favre and I create software.</h3>
     <Particles
       id="tsparticles"
       :particles-init="particlesInit"
@@ -87,8 +89,8 @@
     />
     <div>
       <Header />
-      <Profile />
       <ProjectCard />
+      <Profile />
     </div>
   </div>
 </template>

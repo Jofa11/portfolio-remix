@@ -1,5 +1,6 @@
 <template>
   <div class="card-container">
+    <h3 id="projects">Projects</h3>
     <div class="card">
       <a
     
@@ -131,6 +132,10 @@ h5 {
     display: inline-block;
     justify-content: space-between;
     box-shadow: 4px 4px 5px 2px rgb(83, 39, 124);
+}
+
+#projects {
+    padding-bottom: 1%;
 }
 
 .card:hover {

@@ -1,5 +1,8 @@
 <template>
   <div>
+    <h3 class="profile">
+      About Me
+    </h3>
     <p>
       I love to write code! I would totally be coding on my own even if I
       couldn't do this professionally. I've really worked well on my own.
@@ -34,23 +37,23 @@ export default {
 
 <style>
 h1 {
-    font-size: 3em;
+    font-size: 5em;
     color: rgb(139, 119, 155);
     padding-top: 20%;
     padding-bottom: 8%;
-    text-shadow: 1.5px 1.5px 1px rgb(66, 22, 77);
+    text-shadow: 2px 2px 2px rgb(66, 22, 77);
 }
 
 h3 {
   color: rgb(66, 22, 77);
-  font-size: 1.5em;
-  text-shadow: 1px 1px 1px rgb(66, 22, 77);
+  font-size: 2.5em;
+  text-shadow: 1.5px 1.5px 1.5px rgb(66, 22, 77);
   padding-bottom: 15%;
 }
 
 p {
   color: rgb(66, 22, 77);
-  padding: 2em
+  padding: 1% 8% 5%;
 }
 
 .purp {
@@ -58,6 +61,15 @@ p {
   text-decoration: none;
   font-weight: bold;
   text-shadow: 0.5px 0.5px 0.5px rgb(66, 22, 77);
+}
+
+.purp:hover {
+  color: rgb(129, 45, 150);
+}
+
+.profile {
+  padding-top: 10%;
+  padding-bottom: 1%;
 }
 
 </style>

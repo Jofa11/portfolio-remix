@@ -133,4 +133,7 @@ body {
   color: #2c3e50;
 }
 
+/* #projects-title {
+  padding-bottom: 8%;
+} */
 </style>

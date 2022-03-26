@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <h1>Hello There</h1>
-    <h3>My name is Joshua Favre and I create software.</h3>
+    <h3 id="myName">My name is Joshua Favre and I create software.</h3>
     <Particles
       id="tsparticles"
       :particles-init="particlesInit"
@@ -89,8 +89,12 @@
     />
     <div>
       <Header />
+      <!-- <button @click="toggleTheme">
+        dark
+      </button> -->
       <ProjectCard />
       <Profile />
+      <GithubApi />
     </div>
   </div>
 </template>
@@ -99,13 +103,33 @@
 import Header from './components/Header.vue';
 import Profile from './components/Profile.vue';
 import ProjectCard from './components/ProjectCard.vue';
+import GithubApi from './components/GithubApi.vue';
 
 export default {
   name: 'App',
+  data() {
+    return {
+      theme: 'light'
+    }
+  },
   components: {
     Header,
     Profile,
     ProjectCard,
+    GithubApi
+  },
+  methods: {
+    toggleTheme() {
+      const bod = document.getElementsByName('body');
+      console.log(bod);
+      bod.style = '{ background: url(../src/assets/dark-background.jpeg) }';
+      // const hd3 = document.querySelectorAll('h3');
+      // // if (this.theme === 'light') {
+      //   hd3.style = '{ color: rgb(98, 237, 24) }';
+      //   this.theme = 'dark';
+      // }
+      
+    }
   }
 }
 </script>
@@ -118,11 +142,15 @@ body {
   margin: 0px;
   padding: 0px;
   overflow-x: hidden;
-  background: url('../src/assets/white-clouds.jpeg') no-repeat center center fixed;
+  background: url('../src/assets/prpbkg.jpeg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+#myName {
+  font-size: 3em;
 }
 
 #app {
@@ -133,7 +161,4 @@ body {
   color: #2c3e50;
 }
 
-/* #projects-title {
-  padding-bottom: 8%;
-} */
 </style>

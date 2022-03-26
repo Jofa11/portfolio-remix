@@ -35,10 +35,10 @@
         href="https://themegslist.herokuapp.com/"
         target="_blank"
       >
-        <h2>Megslist</h2>
+        <h2>The MegsList</h2>
         <h5>A marketplace app. MERN stack with Redux</h5>
         <img
-          src="../assets/megslist.png"
+          src="../assets/megslist-2.png"
           alt="project landing page"
         >
       </a>
@@ -52,7 +52,7 @@
         <h2>X Trainer</h2>
         <h5>A full stack project using React and Django</h5>
         <img
-          src="../assets/x-trainer.png"
+          src="../assets/x-trainer-2.png"
           alt="project landing page"
         >
       </a>
@@ -135,7 +135,8 @@ h5 {
 }
 
 #projects {
-    padding-bottom: 1%;
+  padding-top: 2%;
+  padding-bottom: 1%;
 }
 
 .card:hover {

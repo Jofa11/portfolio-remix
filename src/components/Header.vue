@@ -76,11 +76,12 @@ export default {
 
 <style scoped>
 nav {
-  background-color: rgb(139, 119, 155);
+  background-color: rgba(139, 119, 155, .8);
   position: fixed;
   top: 0;
   width: 100%;
   height: 4.4em;
+  border-bottom: 3px solid rgba(66, 22, 77, .7);
 }
 
 ul {
